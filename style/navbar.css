@@ -1,0 +1,42 @@
+@import "colortheme.css";
+body {}
+
+.navbar {
+    background-color: var(--secondaryBackground);
+    width: 4.5%;
+    min-width: 70px;
+    height: 35%;
+    border-radius: 17px;
+    margin-top: 30vh;
+    margin-left: 1%;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+}
+
+.navcontent {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: transparent;
+    color: var(--primaryForeground);
+    height: 20%;
+}
+
+.home-space {
+    height: 35%;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--primaryForeground);
+}
+
+.navicons{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}

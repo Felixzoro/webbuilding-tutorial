@@ -1,0 +1,279 @@
+@import "colortheme.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+html,
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--primaryBackground);
+
+}
+
+.title{
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Zentrierung des Textes horizontal */
+}
+
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    width: 1500px;
+    height: 800px;
+    border-radius: 30px;
+    background: var(--secondaryBackground);
+    box-shadow: 5px 5px 20px rgb(25, 25, 25),
+                -5px -5px 20px rgb(60, 60, 60);
+    display: flex;
+    flex-direction: column;
+   }
+
+.top-div,
+.bottom-div {
+    width: 100%;
+   }
+
+.top-div {
+    
+    text-align: center;
+    height: 15%;
+    display: flex; /* Flexbox verwenden */
+    }
+
+.left-content {
+    width: 90%; /* 90% Breite für den linken Inhalt */
+}
+
+.right-content {
+    width: 10%; /* 10% Breite für den rechten Inhalt */
+    display: flex; /* Flexbox verwenden */
+    justify-content: center; /* Horizontal zentrieren */
+    align-items: center; /* Vertikal zentrieren */
+}
+
+.mid-content {
+width: 100%; /* 90% Breite für den linken Inhalt */
+}
+
+.bottom-div {
+    
+    height: 10%;
+    }
+
+.box {
+    padding: 20px;
+    margin: 50px; /* Abstand zwischen den Boxen */
+    border-radius: 15px; /* Runde Ecken */
+    width: 200px; /* Feste Breite */
+    height: 300px; /* Feste Höhe */
+    display: flex;
+    flex-direction: column; /* Anordnung der Elemente in einer Spalte */
+    align-items: center; /* Zentriert den Inhalt horizontal */
+    text-align: center; /* Zentriert den Text horizontal */
+}
+
+.box h2 {
+    margin-bottom: 0px; /* Abstand zwischen der Überschrift und den Buttons */
+}
+
+.box button {
+    margin-bottom: 15px; /* Abstand zwischen den Buttons */
+    border: none;
+    border-radius: 10px; /* Runde Ecken */
+    padding: 10px 20px; /* Festgelegte Größe */
+    text-align: center; /* Zentriert den Text horizontal */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold; /* Dickere Schrift */
+    cursor: pointer;
+}
+
+.box-button-html {
+    background-color: #ddc227; /* Hintergrundfarbe */
+    color: rgb(0, 0, 0); /* Textfarbe */
+}
+
+.box-button-css {
+    background-color: #427fae; /* Hintergrundfarbe */
+    color: rgb(255, 255, 255); /* Textfarbe */
+}
+
+.html-box-color {
+    background-color: #80361f;  
+}
+
+.css-box-color {
+    background-color: #0d0d28;  
+}
+
+   
+.middle-div {
+    width: 100%;
+    height: 75%;
+    display: flex;
+   }
+   
+.left-middle,
+.right-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+.left-middle {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap; /* Erlaubt das Umbruch von Boxen */
+   }
+
+.right-middle {
+    width: 40%;
+   }
+
+.middle-box-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap; /* Erlaubt das Umbruch von Boxen */
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.main-container{
+    width: 100%; 
+    height: 100%;
+    background-color: var(--primaryBackground);
+    position: relative; /* Positionierung für die inneren divs */
+}
+
+.left-half {
+    position: absolute; /* Absolute Positionierung relativ zur zentrierten div */
+    width: calc(7%); /* Berechnung der Breite mit Abstand */
+    top: 20px; /* Abstand von oben */
+    bottom: 20px; /* Abstand von unten */
+    left: 0;
+    color: white;
+  }
+
+.right-half {
+    position: absolute; /* Absolute Positionierung relativ zur zentrierten div */
+    width: calc(93%); /* Berechnung der Breite mit Abstand */
+    top: 20px; /* Abstand von oben */
+    bottom: 20px; /* Abstand von unten */
+    right: 0;
+    color: white;
+  }
+   
+  .bottom-div {
+    display: flex;
+    align-items: center; /* Vertikal zentrieren */
+}
+
+.back-button,
+.next-button,
+.next-button1,
+.next-box-button,
+.back-box-button {
+    padding: 10px 20px; /* Festgelegte Größe */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.back-button {
+    margin-left: 40px; /* Platzieren Sie den Zurück-Button ganz links */
+    background-color: #4CAF50;
+}
+
+.next-button {
+    margin-left: 1240px; /* Platzieren Sie den Weiter-Button ganz rechts */
+    background-color: #4CAF50;
+}
+.next-button1 {
+    margin-left: 1369px; /* Platzieren Sie den Weiter-Button ganz rechts */
+    background-color: #4CAF50;
+}
+
+.back-box-button {
+    margin-left: 40px; /* Platzieren Sie den Weiter-Button ganz rechts */
+    background-color: #427fae;
+}
+
+.next-box-button {
+    margin-left: 1200px; /* Platzieren Sie den Weiter-Button ganz rechts */
+    background-color: #427fae;
+}
+
+#text {
+    font-size: 90px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: #f16868; /* Rotes Textfarbe */
+    animation: pulse 1s infinite alternate; /* Pulsierende Animation */
+  }
+
+  @keyframes pulse {
+    from {
+      text-shadow: 0 0 10px #ff0000; /* Schatten mit roter Farbe */
+    }
+    to {
+      text-shadow: 0 0 20px #ebbf2e; /* Intensivere Schattenwirkung */
+    }
+  }
+
+  .outro{
+    text-decoration: underline;
+  }
+
+  button {
+    font-size: 18px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    will-change: box-shadow,transform;
+    padding: 0 2em;
+    border-radius: 0.3em;
+    color: #fff;
+    height: 2.6em;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+  }
+  
+  button:hover {
+    box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px white;
+    transform: translateY(-0.1em);
+  }
+  
+  button:active {
+    box-shadow: inset 0px 0.1em 0.6em white;
+    transform: translateY(0em);
+  }

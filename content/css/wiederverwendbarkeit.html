@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Wiederverwendbarkeit</title>
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/navbar.css">
+</head>
+<body>  
+    <div class="container">
+        <div class="main-container">
+            <div class="left-half">
+            <div class="navbar">
+                <div class="navcontent home-space" id="navitem-4"> <a href="../../main/index.html"> <img src="../../media/home.png" class="navicons"></a></div> 
+                <div class="navcontent" id="navitem-1"> <a href="../../main/html.html"> <img src="../../media/html.png" class="navicons"> </a></div>
+                <div class="navcontent" id="navitem-2"> <a href="../../main/css.html"> <img src="../../media/css.png" class="navicons"> </a></div>
+            </div>
+            </div>
+            <div class="right-half">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="top-div">
+                            <div class="left-content">
+                                <h1>Verwendung - Wiederverwendbarkeit</h1>
+                                <p>Hier wird kurz Erklärt, wie Klassen aus CSS in mehreren HTML Dateien wiederverwenden kann:</p>
+                            </div>
+                            <div class="right-content">
+                                <img src="../../media/css.png" class="navicons">
+                            </div>
+                        </div>
+                        <div class="middle-div">
+                            <div class="left-middle">
+                            <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=vscode&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520main.html%2520--%253E%250A%253Chead%253E%250A%2520%2520%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522style.css%2522%253E%250A%253C%252Fhead%253E%250A%253Cbody%253E%250A%2509%253Ch%253E%2520main.html%2520Datei%2520%253C%252Fh%253E%250A%253C%252Fbody%253E"
+                            style="width: 800px; height: 204px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                            <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=vscode&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520second.html%2520--%253E%250A%253Chead%253E%250A%2520%2520%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522style.css%2522%253E%250A%253C%252Fhead%253E%250A%253Cbody%253E%250A%2509%253Ch%253E%2520second.html%2520Datei%2520%253C%252Fh%253E%250A%253C%252Fbody%253E"
+                            style="width: 800px; height: 204px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                            <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=vscode&wt=none&l=css&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F*%2520style.css%2520Datei%2520*%252F%250Ah%2520%257B%250A%2520%2520color%253A%2520purple%253B%250A%257D"
+                            style="width: 800px; height: 148px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                            </div>
+                            <div class="right-middle">
+                                <div class="windows-bar"> 
+                                    <div class="browser-bar"> <img src="../../media/browser-bar.png">  </div>
+                                    <h> Beide HTML Dateien kriegen die CSS Stile der style.css Datei. </h>
+                                    <div class="maindiv"> main.html Datei </div>
+                                    <div class="secdiv"> second.html Datei </div>
+                                    <style>
+                                        .maindiv{
+                                            position: absolute;
+                                            bottom: 150px;
+                                            color: purple;
+                                            width: 130px; 
+                                            height: 40px;
+                                            border: solid 2px;
+                                        }
+                                        .secdiv{
+                                            position: absolute;
+                                            bottom: 100px;
+                                            color: purple;
+                                            width: 120px; 
+                                            height: 40px;
+                                            border: solid 2px;
+                                        }
+                                        .windows-bar{
+                                        text-align: center;
+                                        color: black;
+                                        position: absolute;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        background-color: white;
+                                        width: 500px;
+                                        height: 390px;
+                                        padding: 20px;
+                                        }
+                                        .browser-bar{
+                                            position: absolute;
+                                            top: 0;
+                                            width: 100%;
+                                            height: 20px
+                                        }
+                                    </style>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-div">
+                        <a href="implementierung.html"><button class="back-button">Zurück</button>
+                        <a href="kombination.html"><button class="next-button">Weiter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

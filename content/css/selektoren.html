@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Class/Selektor</title>
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/navbar.css">
+</head>
+<body>  
+    <div class="container">
+        <div class="main-container">
+            <div class="left-half">
+            <div class="navbar">
+                <div class="navcontent home-space" id="navitem-4"> <a href="../../main/index.html"> <img src="../../media/home.png" class="navicons"></a></div> 
+                <div class="navcontent" id="navitem-1"> <a href="../../main/html.html"> <img src="../../media/html.png" class="navicons"> </a></div>
+                <div class="navcontent" id="navitem-2"> <a href="../../main/css.html"> <img src="../../media/css.png" class="navicons"> </a></div>
+            </div>
+            </div>
+            <div class="right-half">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="top-div">
+                            <div class="left-content">
+                                <h1>Aufbau - Class - Selektor</h1>
+                                <p>Hier wird kurz Erklärt, was eine Class - Selektor ist:</p>
+                            </div>
+                            <div class="right-content">
+                                <img src="../../media/css.png" class="navicons">
+                            </div>
+                        </div>
+                        <div class="middle-div">
+                            <div class="left-middle">
+                            <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=vscode&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbody%253E%250A%2520%2520%2509%253Ch%250A%2520%2520%2520%2520%253Cbutton%253E%2520Gelber%2520Button%21%2520%253C%252Fbutton%253E%250A%2509%253Ch%2520class%253D%2522redtext%2522%253E%2520Roter%2520Text%2520%253C%252Fh%253E%250A%2509%253Ch%2520class%253D%2522bluetext%2522%253E%2520Blauer%2520Text%2520%253C%252Fh%253E%250A%2509%253Cdiv%2520id%253D%2522greendiv%2522%253E%2520Gr%25C3%25BCne%2520Box%2520%253C%252Fdiv%253E%250A%253C%252Fbody%253E%250A%250A%253Cstyle%253E%250A%2520%2520%250A%2520%2520.redtext%257B%2520%252F*%2520Class%2520mit%2520einem%2520.%2520davor%2520*%252F%250A%2509color%253A%2520red%253B%250A%2520%2520%257D%250A%2520%2520.bluetext%257B%250A%2509color%253A%2520blue%253B%250A%2520%2520%257D%250A%2520%2520%2523greendiv%257B%2520%252F*%2520ID%2520mit%2520einem%2520%2523%2520davor%2520*%252F%250A%2509background-color%253A%2520green%253B%250A%2520%2520%257D%250A%2520%2520button%257B%2520%252F*%2520Um%2520alle%2520Button%2520Elemente%2520anzusprechen%252C%2520einfach%2520%2522button%2522%2520*%252F%250A%2520%2520%2520%2520backround-color%253A%2520yellow%253B%250A%2520%2520%257D%250A%2520%2520%250A%253C%252Fstyle%253E"
+                            style="width: 800px; height: 521px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+
+
+
+                            </div>
+                            <div class="right-middle">
+                                <div class="windows-bar"> 
+                                    <div class="alldivup"> 
+                                    <h> CSS Selektoren werden verwendet um CSS Stille auf ausgewählte Elemente zu übertragen.</h>
+                                    <h4> In CSS kann so darauf zugegriffen werden: </h4> <h4> class="text1" -> .text1{ } </h4> <h4> id="text1" -> #text1 {} </h4> <h4> button -> button{} </h4>
+                                    </div>
+                                    <div class="browser-bar"> <img src="../../media/browser-bar.png">  </div>
+                                    <div class="alldiv">
+                                    <button class="testbtn"> Gelber Button! </button>
+                                    <h class="redtext"> Roter Text </h>
+                                    <h class="bluetext"> Blauer Text </h>
+                                    <div id="greendiv"> Grüne Box </div>
+                                    </div>
+                                    <style>
+                                        .alldivup{
+                                            position:absolute;
+                                            bottom: 100px;
+                                        }
+                                        .alldiv{
+                                            position:absolute;
+                                            bottom: 30px;
+                                        }
+                                        .testbtn{
+                                            background-color:yellow;
+                                        }
+                                        .redtext{
+                                            color: red;
+                                        }
+                                        .bluetext{
+                                            color:blue;
+                                        }
+                                        #greendiv{
+                                            background-color:green;
+                                        }
+                                        .windows-bar{
+                                        text-align: center;
+                                        color: black;
+                                        position: absolute;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        background-color: white;
+                                        width: 500px;
+                                        height: 390px;
+                                        padding: 20px;
+                                        }
+                                        .browser-bar{
+                                            position: absolute;
+                                            top: 0;
+                                            width: 100%;
+                                            height: 20px
+                                        }
+                                    </style>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-div">
+                            <a href="deklaration.html"><button class="next-button1">Weiter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

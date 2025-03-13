@@ -1,0 +1,17 @@
+:root {
+    --primaryBackground: #36363a;
+    --secondaryBackground: #1e1e1ee9;
+    --primaryForeground: #EEEEEE;
+    --title: ;
+    --link: ;
+    --secondaryForeground: ;
+}
+
+.lul-mode {
+    --primaryBackground: #ff0000;
+    --secondaryBackground: rgb(209, 209, 209);
+    --primaryForeground: #000000;
+    --title: ;
+    --link: ;
+    --secondaryForeground: ;
+}
